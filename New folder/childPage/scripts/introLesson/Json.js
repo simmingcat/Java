@@ -1,6 +1,6 @@
-console.log("person1.hair");
-console.log("person2.game");
-console.log("person2.color");
+console.log("person1,hair");
+console.log("person2,game");
+console.log("person2,color");
 
 
 let person1 ={
