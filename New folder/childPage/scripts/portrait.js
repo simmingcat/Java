@@ -12,7 +12,9 @@ if (isNaN (number) ) {
 }
 
 function main() {
- let firstNumber, secondNumber, text;
+ let firstNumber;
+ let secondNumber;
+ let text;
 
  firstNumber = document.getElementByID("textfield1").value;
 document.getElementByID("validityTest1").innerHTML = alert (testNaN (firstNumber));
@@ -22,4 +24,12 @@ document.getElementByID("validityTest1").innerHTML = testNaN (firstNumber);
 document.getElementByID("validityTest2").innerHTML = alert (testNaN (firstNumber));
 document.getElementByID("validityTest2").innerHTML = testNaN (firstNumber);
 
+ if(stop == true)
+ document.getElementByID("answer").innerHTML = "restart the thingy"
+
+}else {
+  console.log("the display geometry is", geometry (firstNumber, secondNumber));
+  document.getElementByID('answer').innerHTML = "this display is" + geometry (firstNumber, secondNumber);
+
+}
 }
