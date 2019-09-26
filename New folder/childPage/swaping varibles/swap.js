@@ -17,7 +17,8 @@ console.log(athenaChow);
 console.log(georgeChicken);
 
 let swap = athenaChow.last;
-georgeChicken.last = athenaChow.last;
+athenaChow.last = georgeChicken.last;
+georgeChicken.last = swap;
 
 console.log(athenaChow);
 console.log(georgeChicken);
