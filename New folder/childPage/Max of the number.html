@@ -2,97 +2,88 @@
 <html lang="en" dir="ltr">
   <head>
 
-    <noscript><h1 style="color:red;">JavaScript needs to be enabled in Settings</h1></noscript> <!-- Checks browser settings for JavaScript -->
+ <noscript><h1 style="color:purple;">JavaScript needs to be enabled in settings</h1></noscript> <!-- check browers setting for JavaScript-->
 
     <meta charset="utf-8">
-    <meta name="author" content="Mark Mercer">
-    <meta name="description" content="JavaScript Assignemnts, output to console"> <!-- Webpage Description to poplulate search engines like Google-->
-    <meta name="keywords" content="JavaScript, Console"> <!-- Key words for searching -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Athena Chow">
+    <meta name="description" content="Intermediate JavaScript Lessons">
+    <meta name="keywords" content="JavaScript, Variables, coding, algorithms, lessons, bored">
+    <meta name="vewport" content="width=device-width, initial-scale=1.0">
 
-    <title>I'm Learning Javacript</title>
-
+    <title>Max of two number</title>
   </head>
 
   <body>
 
-    <header><h1>LandScape or Portrait Assignment</h1></header>
+<header style="color:#999966;"><h1> Max of two number </h1><header>
 
-    <nav></nav>
-    <aside></aside>
+<nav></nav>
+<adside></adside>
 
-    <section>
-      <article>
-        <!--  -->
-        <form action="x.html" method="post" onsubmit="event.preventDefault();">
-        <!-- Ensures this FORM doesn't work with PHP or other server side scripting
-        languages-->
+<section>
+  <article>
+    <form action="x.html" method="post" onsubmit="event.preventDefault();">
 
-        <p>&nbsp;</p>
-        <!-- See: https://www.w3schools.com/html/html_entities.asp-->
-        <!-- Non-breaking real space, adds real space to webpage that is not
-        eliminated by browser (hard coded space)-->
+  <a><strong>enter the value of width and height below...</strong></a>
+  <p>
+  <lable for="textfield1">1+1:<label>
+  <input name ="textfield1" type="text" id="textfield1">
+  <a id="validityTest1">see the alert</a>
+  </p>
 
-        <a><strong>Enter the values of width and height below ...</strong></a>
+  <p>
+  <lable for="textfield2">2+2:<label>
+  <input name ="textfield2" type="text" id="textfield2">
+  <a id="validityTest2">see the alert</a>
+  </p>
 
-        <p>
-          <label for="textfield">Frist: </label>
-          <input name="textfield1" type="text" id="textfield1">
-            <a id="validityTest1">See the Alert</a>
-        </p>
+<br><br>
+<button type="button" onclick="main()" >submit</button>
+<br>
+<h3> The answer is:
+  <a id="answer">what is the answer</a>
+</h3>
+<br><br><br>
 
-        <p>
-          <label for="textfield2">Second: </label>
-          <input name="textfield2" type="text" id="textfield2">
-            <a id="validityTest2">See the Alert</a>
-        </p>
-
-        <!-- Submit Button -->
+<body style="background-color:#88ff4d">
+  <!--width is greater than height, return landscape
+    width is less than height, return portrait
+    width is equal to height,return square -->
+    <fieldset>
+      <legend>Case Study</legend>
+      <p>See Mr. Mercer for lesson, below reviews vocabulary</p>
+      <div>
+        <label>
+          <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
+          <a>1+1= </a><a id="checkbox1_answer">Answer?</a>
+        </label>
         <br>
-        <button type="button" onclick="main()">Submit</button>
+        <label>
+          <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
+          <a>2+2= </a><a id="checkbox2_answer">Answer?</a>
+        </label>
         <br>
-        <h3>The Answer is:
-          <a id="answer">What is the answer?</a>
-        </h3>
-        <br><br><br>
+        <label>
+          <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
+          <a>3+3= </a><a id="checkbox3_answer">Answer?</a>
+        </label>
+        <br></br>
+        <button type="button" onclick="checkboxes()">Submit</button>
+    </fieldset>
 
-        <!-- Exemplar illstrating what this page does -->
-        <!-- Future: make this illustrative of the example to understand the problem -->
-        <fieldset>
-          <legend>Case Study</legend>
-          <p>See Mr. Mercer for lesson, below reviews vocabulary</p>
-          <div>
-            <button type="button" onclick="checkboxes()">Submit</button>
-            <br><br>
-            <label>
-              <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
-              <a>Width is greater than Height: </a><a id="checkbox1_answer">Answer?</a>
-            </label>
-            <br>
-            <label>
-              <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
-              <a>Width is less than Height: </a><a id="checkbox2_answer">Answer?</a>
-            </label>
-            <br>
-            <label>
-              <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
-              <a>Width is equal to Height: </a><a id="checkbox3_answer">Answer?</a>
-            </label>
-        </fieldset>
+  </article>
+</section>
 
-      </article>
-    </section>
+<br><br><br>
 
-    <br><br><br>
-
-    <script src="">\\FS-052\studuser$\Gr11\a.chow11\My Documents\GitHub\Java\New folder\childPage\number of two\number of two.js</script>
+<script src="\\FS-052\studuser$\Gr11\a.chow11\My Documents\GitHub\Java\New folder\childPage\number of two\number of two.js"></script>
 
   </body>
 
-  <footer>
-    <blockquote cite="https://worldonawhim.com/vacation-quotes-travel-quotes/"<!-- Date Accessed:20190911 --!>
-      <p><strong>My favourite plave to vacation is anyplace by the beach</strong><em><a href="https://worldonawhim.com/vacation-quotes-travel-quotes/" target="_blank">-Nina Arianda</a></em></p>
-      <p>&copy Athena Chow, power by Simmingcat in GitHub</p>
-  </footer>
+<footer>
+  <blockquote cite="https://worldonawhim.com/vacation-quotes-travel-quotes/"<!-- Date Accessed:20190911 --!>
+    <p><strong>My favourite plave to vacation is anyplace by the beach</strong><em><a href="https://worldonawhim.com/vacation-quotes-travel-quotes/" target="_blank">-Nina Arianda</a></em></p>
+    <p>&copy Athena Chow, power by Simmingcat in GitHub</p>
+</footer>
 
 </html>

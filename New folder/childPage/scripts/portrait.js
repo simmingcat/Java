@@ -62,6 +62,7 @@ function main() {
   } else {
     console.log("The display geometry is", geometry (firstNumber, secondNumber) );
     document.getElementById('answer').innerHTML = "This display is " + geometry (firstNumber, secondNumber);
+
   }
 
 }
