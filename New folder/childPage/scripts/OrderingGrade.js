@@ -15,13 +15,12 @@ function orderingThree (first, second, third, fourth) {
 
     if (first > second) {
       second = first
-
     }
+
     if (second > third) {
       third = second
-
-
     }
+
     if (third > fourth) {
       fourth = third
 
