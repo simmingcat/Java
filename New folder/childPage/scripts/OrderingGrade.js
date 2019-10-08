@@ -10,19 +10,33 @@ function testNaN (number) {
   }
 }
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+
+}
+
+
 function orderingThree (first, second, third, fourth) {
+  let memory1;
   while (first > second || second > third || third > fourth) {
 
-    if (first > second) {
-      second = first
+while (first > second || second > third) {
+  if (first > second) {
+    memory1 = second;
+    second = first;
+    first = memory1;
+  }
+  if (second > third) {
+    memory1 = third;
+    third = second;
+    second = memory1;
     }
-
-    if (second > third) {
-      third = second
-    }
-
     if (third > fourth) {
-      fourth = third
+       memory1 = fourth
+       fourth = third
+       third = memory1
 
     }
   }

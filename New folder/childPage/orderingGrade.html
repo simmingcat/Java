@@ -56,6 +56,29 @@
           background-color: #ddd;
           color: black;
       }
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        }
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+        }
+        .side {
+          -ms-flex: 30%; /* IE10 */
+          flex: 30%;
+          background-color: #f1f1f1;
+          padding: 20px;
+        }
+        .main {
+          -ms-flex: 70%; /* IE10 */
+          flex: 70%;
+          background-color: white;
+          padding: 20px;
+        }
     }
 
     </style>
@@ -66,88 +89,89 @@
         <p><strong>Enter the value below</strong></p>
       </div>
 
-
       <div class="navbar">
       <a href="file:///C:/Users/StarFoxPlays/Documents/GitHub/Java/New%20folder/home%20page/home.html" target=" _blank" class="active">Home</a>
       <a href="file:///C:/Users/StarFoxPlays/Documents/GitHub/Java/New%20folder/childPage/portrait.html" target="_blank">portrait and landscape</a>
-      <a href="#">Link</a>
+      <a href="file:///C:/Users/StarFoxPlays/Documents/GitHub/Java/New%20folder/childPage/demerit%20point.html" target="_blank">Dermerit Points</a>
       <a href="#" class="right">Link</a>
     </div>
 
-  <nav></nav>
-  <adside></adside>
+    <div class="row">
+      <div class="side">
+        <h2>Grade Order</h2>
+        <p>
+        <lable for="textfield1">Grade1:<label>
+        <input name ="textfield1" type="text" id="textfield1">
+        <a id="validityTest1">see the alert</a>
+        </p>
 
-  <section>
-    <article>
-      <form action="x.html" method="post" onsubmit="event.preventDefault();">
+        <p>
+        <lable for="textfield2">Grade2:<label>
+        <input name ="textfield2" type="text" id="textfield2">
+        <a id="validityTest2">see the alert</a>
+        </p>
 
-    <p>
-    <lable for="textfield1">Grade1:<label>
-    <input name ="textfield1" type="text" id="textfield1">
-    <a id="validityTest1">see the alert</a>
-    </p>
+        <p>
+        <lable for="textfield3">Grade3:<label>
+        <input name ="textfield3" type="text" id="textfield3">
+        <a id="validityTest3">see the alert</a>
+        </p>
 
-    <p>
-    <lable for="textfield2">Grade2:<label>
-    <input name ="textfield2" type="text" id="textfield2">
-    <a id="validityTest2">see the alert</a>
-    </p>
+        <p>
+        <lable for="textfield4">Grade4:<label>
+        <input name ="textfield4" type="text" id="textfield4">
+        <a id="validityTest4">see the alert</a>
+        </p>
 
-    <p>
-    <lable for="textfield3">Grade3:<label>
-    <input name ="textfield3" type="text" id="textfield3">
-    <a id="validityTest3">see the alert</a>
-    </p>
+    <button type="button" onclick="main()" >submit</button>
+    <a id="answer">what is the answer</a>
+      </div>
+    </div>
 
-    <p>
-    <lable for="textfield4">Grade4:<label>
-    <input name ="textfield4" type="text" id="textfield4">
-    <a id="validityTest4">see the alert</a>
-    </p>
 
-<button type="button" onclick="main()" >submit</button>
-<a id="answer">what is the answer</a>
+      <div class="main">
+        <h2>TITLE HEADING</h2>
+        <label>
+          <form action="x.html" method="post" onsubmit="event.preventDefault();">
 
-<br></br>
-    <fieldset>
-    <legend>case study</legend>
-    <p>Ordering Grades</p>
-    <div>
+
+        <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
+        <a>Is 50% greater than 60%: </a><a id="checkbox1_answer">Answer?</a>
+        </label>
+        <br>
 
       <label>
-      <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
-      <a>Is 50% greater than 60%: </a><a id="checkbox1_answer">Answer?</a>
+      <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
+      <a>Is 70% < 65%: </a><a id="checkbox2_answer">Answer?</a>
       </label>
       <br>
 
-    <label>
-    <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
-    <a>Is 70% < 65%: </a><a id="checkbox2_answer">Answer?</a>
-    </label>
-    <br>
+      <label>
+      <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
+      <a>Is 95% < 95%: </a><a id="checkbox3_answer">Answer?</a>
+      </label>
+      <br>
 
-    <label>
-    <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
-    <a>Is 95% < 95%: </a><a id="checkbox3_answer">Answer?</a>
-  </label>
-  <br>
+      <label>
+      <input type="checkbox" name="Checkbox4" nalue="checkbox4" id="Checkbox4">
+      <a>Is 95% = 100%: </a><a id="checkbox4_answer">Answer?</a>
+      </label>
+      <br>
+      <button type="button" onclick="checkboxes()">Submit</button>
 
-  <label>
-  <input type="checkbox" name="Checkbox4" nalue="checkbox4" id="Checkbox4">
-  <a>Is 95% = 100%: </a><a id="checkbox4_answer">Answer?</a>
-</label>
-<br>
-  <button type="button" onclick="checkboxes()">Submit</button>
-    </fieldset>
+      <script src="New folder\childPage\scripts\OrderingGrade.js"></script>
 
-<script src="New folder\childPage\scripts\OrderingGrade.js"></script>
+      </body>
+      </div>
 
-  </body>
+  <nav></nav>
+  <adside></adside>
+<br></br></br>
 
-<footer>
-  <blockquote cite="https://worldonawhim.com/vacation-quotes-travel-quotes/"<!-- Date Accessed:20190911 --!>
-    <p><strong>My favourite plave to vacation is anyplace by the beach</strong><em><a href="https://worldonawhim.com/vacation-quotes-travel-quotes/" target="_blank">-Nina Arianda</a></em></p>
-    <p>&copy Athena Chow, power by Simmingcat in GitHub</p>
-</footer>
+  <div class="footer">
+      <blockquote cite="https://worldonawhim.com/vacation-quotes-travel-quotes/"<!-- Date Accessed:20190911 --!>
+      <p><strong>My favourite plave to vacation is anyplace by the beach</strong><em><a href="https://worldonawhim.com/vacation-quotes-travel-quotes/" target="_blank">-Nina Arianda</a></em></p>
+      <p>&copy Athena Chow, power by Simmingcat in GitHub</p>
+  </div>
 
 </html>
