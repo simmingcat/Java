@@ -14,10 +14,6 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-
-}
-
-
 function orderingThree (first, second, third, fourth) {
   let memory1;
   while (first > second || second > third || third > fourth) {
