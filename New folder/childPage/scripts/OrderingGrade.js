@@ -11,7 +11,6 @@ function testNaN (number) {
 }
 
 function orderingThree (first, second, third, fourth) {
-  let memory1;
   while (first > second || second > third || third > fourth) {
 
     if (first > second) {
