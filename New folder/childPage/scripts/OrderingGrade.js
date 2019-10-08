@@ -12,28 +12,27 @@ function testNaN (number) {
 
 function orderingThree (first, second, third, fourth) {
   let memory1;
-
   while (first > second || second > third || third > fourth) {
+
     if (first > second) {
-      memory1 = second;
-      second = first;
-      first = memory1;
+      second = first
+
     }
     if (second > third) {
-      memory1 = third;
-      third = second;
-      second = memory1;
+      third = second
+
+
     }
     if (third > fourth) {
-      memory1 = fourth
-      fourth = third;
-      third = memory1;
+      fourth = third
+
     }
   }
 
 if (first <= second) {
   if (second <= third) {
     if (third <= fourth){
+
     return first + ", " + second + ", " + third + ", " + fourth;
   }
   }

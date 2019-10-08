@@ -11,11 +11,69 @@
     <meta name="vewport" content="width=device-width, initial-scale=1.0">
 
     <title>Landscript or Portrait</title>
-  </head>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  <body>
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
 
-<header style="color:#999966;"><h1> Landscript or Portrait </h1><header>
+    /* Header/logo Title */
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: #A0F3FF;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 40px;
+    }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+      }
+
+      /* Style the navigation bar links */
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        }
+
+        .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+    }
+
+    </style>
+    </head>
+    <body>
+      <div class="header">
+        <h1>Landscript or Portrait</h1>
+        <p><strong>Enter the value below</strong></p>
+      </div>
+
+
+      <div class="navbar">
+      <a href="file:///C:/Users/StarFoxPlays/Documents/GitHub/Java/New%20folder/home%20page/home.html" class="active">Home</a>
+      <a href="file:///C:/Users/StarFoxPlays/Documents/GitHub/Java/New%20folder/childPage/orderingGrade.html" target="_blank">Ordering grade</a>
+      <a href="#">Link</a>
+      <a href="#" class="right">Link</a>
+    </div>
+
 
 <nav></nav>
 <adside></adside>
@@ -45,38 +103,7 @@
 </h3>
 <br><br><br>
 
-<body style="background-color:#80ffff;">
-  <!--width is greater than height, return landscape
-    width is less than height, return portrait
-    width is equal to height,return square -->
-    <fieldset>
-      <legend>Case Study</legend>
-      <p>See Mr. Mercer for lesson, below reviews vocabulary</p>
-      <div>
-        <label>
-          <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
-          <a>Width is greater than Height: </a><a id="checkbox1_answer">Answer?</a>
-        </label>
-        <br>
-        <label>
-          <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
-          <a>Width is less than Height: </a><a id="checkbox2_answer">Answer?</a>
-        </label>
-        <br>
-        <label>
-          <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
-          <a>Width is equal to Height: </a><a id="checkbox3_answer">Answer?</a>
-        </label>
-        <br></br>
-        <button type="button" onclick="checkboxes()">Submit</button>
-    </fieldset>
-
-  </article>
-</section>
-
-<br><br><br>
-
-<script src="\\FS-052\studuser$\Gr11\a.chow11\My Documents\GitHub\Java\New folder\childPage\scripts\portrait.js"></script>
+<script src="New folder\childPage\scripts\portrait.js"></script>
 
   </body>
 
