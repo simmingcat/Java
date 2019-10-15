@@ -79,34 +79,46 @@
       <a href="#">Link</a>
     </div>
 
+    <article>
+      <form action="x.html" method="post" onsubmit="event.preventDefault();">
+    <p>
+    <lable for="textfield1">width:<label>
+    <input name ="textfield1" type="text" id="textfield1">
+    <a id="validityTest1">see the alert</a>
+    </p>
 
-<nav></nav>
-<adside></adside>
+    <p>
+    <lable for="textfield2">height:<label>
+    <input name ="textfield2" type="text" id="textfield2">
+    <a id="validityTest2">see the alert</a>
+    </p>
 
-<section>
-  <article>
-    <form action="x.html" method="post" onsubmit="event.preventDefault();">
-  <p>
-  <lable for="textfield1">width:<label>
-  <input name ="textfield1" type="text" id="textfield1">
-  <a id="validityTest1">see the alert</a>
-  </p>
+  <br><br>
+  <button type="button" onclick="main()" >submit</button>
+  <br>
+  <h3> The answer is:
+    <a id="answer">what is the answer</a>
+  </h3>
 
-  <p>
-  <lable for="textfield2">height:<label>
-  <input name ="textfield2" type="text" id="textfield2">
-  <a id="validityTest2">see the alert</a>
-  </p>
+  <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
+               <a>Width is greater than Height: </a><a id="checkbox1_answer">Answer?</a>
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
+               <a>Width is less than Height: </a><a id="checkbox2_answer">Answer?</a>
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
+               <a>Width is equal to Height: </a><a id="checkbox3_answer">Answer?</a>
+             </label>
+              <br>
+             <button type="button" onclick="checkboxes()" >submit</button>
 
-<br><br>
-<button type="button" onclick="main()" >submit</button>
-<br>
-<h3> The answer is:
-  <a id="answer">what is the answer</a>
-</h3>
-<br><br><br>
+</article>
 
-<script src="New folder\childPage\scripts\portrait.js"></script>
+<script src="scripts\portrait.js"></script>
 
   </body>
 

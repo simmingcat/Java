@@ -100,19 +100,56 @@
       <div class="side">
       </div>
       <div class="main">
-        <h2>TITLE HEADING</h2>
+        <h2>Calculation Of Dermerit Points</h2>
+        <p>
+   <label for="textfield">Speed Limit: </label>
+   <input name="textfield1" type="text" id="textfield1">
+   <a id="validityTest1">"See the Alert", Inner HTML</a>
+   <br>
+   <a>Note: if nothing entered, speed limit will be <strong>70 km/h</strong></a>
+ </p>
 
-        <div class="fakeimg" style="height:200px;"></div>
-        <p>Some text..</p>
-        <p></p>
-        <br>
-        <h2>TITLE HEADING</h2>
+ <p>
+   <label for="textfield2">Speed for demerit calculation: </label>
+   <input name="textfield2" type="text" id="textfield2">
+   <a id="validityTest2">See the Alert</a>
+ </p>
 
-        <div class="fakeimg" style="height:200px;"></div>
-        <p>Some text..</p>
-        <p></p>
+ <br>
+ <button type="button" onclick="main()">Submit</button>
+
+
+        <h2>Question?</h2>
+        <div class="fakeimg" style="height:2px;"></div>
+        <h3>
+          <a>Speed limit entered is </a><a id="speedLimit">70 km/h</a>
+          <br>
+          <a>Speed Entered Above is </a><a id="speed">...</a>
+          <br>
+          <a id="answer">for ___ Demerit Points</a>
+        </h3>
+
+        <button type="button" onclick="checkboxes()">Submit</button>
+                 <br><br>
+                 <label>
+                   <input type="checkbox" name="Checkbox1" nalue="checkbox1" id="Checkbox1">
+                   <a>Question: </a><a id="checkbox1_answer">True False Answer</a>
+                 </label>
+                 <br>
+
+                 <label>
+                   <input type="checkbox" name="Checkbox2" nalue="checkbox2" id="Checkbox2">
+                   <a>Question: </a><a id="checkbox2_answer">True False Answer</a>
+                 </label>
+                 <br>
+
+                 <label>
+                   <input type="checkbox" name="Checkbox3" nalue="checkbox3" id="Checkbox3">
+                   <a>Question: </a><a id="checkbox3_answer">True False Answer</a>
+
       </div>
     </div>
+     <script src="scripts/DemeritPoints.js"></script>
 
     <div class="footer">
         <blockquote cite="https://worldonawhim.com/vacation-quotes-travel-quotes/"<!-- Date Accessed:20190911 --!>

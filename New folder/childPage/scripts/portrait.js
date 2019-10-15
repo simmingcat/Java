@@ -11,9 +11,10 @@ function testNaN (number) {
 }
 
 function geometry (width, height) { //Notice these parameters are local and do not mix with "number" variable
-  if (width == height) return 'Square'; //must be first, return will not allow rest of code to run
-  return (width > height) ? 'Landscape' : 'Portrait'; //ternary operator example
-  //Seems odd, the inequality, here, is reading the opposite
+  if (width == height) return 'Square';
+  if (width > height) return 'landscape';
+  if (width < height)  return 'portrait';
+
 }
 
 function checkboxes() {
@@ -22,7 +23,7 @@ function checkboxes() {
   checkbox2 = document.getElementById('Checkbox2').checked;
   checkbox3 = document.getElementById('Checkbox3').checked;
   if ( checkbox1 == true ) {
-    document.getElementById('checkbox1_answer').innerHTML = "good for You";
+    document.getElementById('checkbox1_answer').innerHTML = "landscape";
   } else {
     document.getElementById('checkbox1_answer').innerHTML = "Answer?";
   }
