@@ -10,53 +10,38 @@ function testNaN (number) {
   }
 }
 
-function geometry (two , four) { //Notice these parameters are local and do not mix with "number" variable
-  if ( two > four) return 'four'; //must be first, return will not allow rest of code to run
- //ternary operator example
+function smallestToLargest (first, second) { //Notice these parameters are local and do not mix with "number" variable
+  if (first == second) return 'Numbers are the same'; //must be first, return will not allow rest of code to run
+  return (first < second) ? first + ', ' + second: second + ', ' + first; //ternary operator example
   //Seems odd, the inequality, here, is reading the opposite
 }
 
-function checkboxes() {
-  let checkbox1, checkbox2;
-  checkbox1 = document.getElementById('Checkbox1').checked;
-  checkbox2 = document.getElementById('Checkbox2').checked;
-
-  if ( checkbox1 == true ) {
-    document.getElementById('checkbox1_answer').innerHTML = "2";
-  } else {
-    document.getElementById('checkbox1_answer').innerHTML = "Answer?";
-  }
-  if ( checkbox2 == true ) {
-    document.getElementById('checkbox2_answer').innerHTML = "4";
-  } else {
-    document.getElementById('checkbox2_answer').innerHTML = "Answer?";
-  }
-
-
 // This coding illustrates the advanced method
 function main() {
-  //console.log("It works");
 
-  let firstNumber, secondNumber, text;
+  let firstNumber, secondNumber;
 
-  //Get the Width-value from id=textfield1
-  firstNumber = document.getElementById('textfield1').value;
+   //Get the Width-value from id=textfield1
+   firstNumber = document.getElementById('textfield1').value;
 
-  //testNaN (firstNumber);
-  document.getElementById('validityTest1').innerHTML = alert ( testNaN (firstNumber));
-  document.getElementById('validityTest1').innerHTML = testNaN (firstNumber);
+   //testNaN (firstNumber);
+   document.getElementById('validityTest1').innerHTML = alert ( testNaN (firstNumber));
+   document.getElementById('validityTest1').innerHTML = testNaN (firstNumber);
 
-  //Get the Height-value from id=textfield2
-  secondNumber = document.getElementById('textfield2').value;
-  //testNaN (secondNumber);
-  document.getElementById('validityTest2').innerHTML = alert ( testNaN (secondNumber));
-  document.getElementById('validityTest2').innerHTML = testNaN (secondNumber);
+   //Get the Height-value from id=textfield2
+   secondNumber = document.getElementById('textfield2').value;
+   //testNaN (secondNumber);
+   document.getElementById('validityTest2').innerHTML = alert ( testNaN (secondNumber));
+   document.getElementById('validityTest2').innerHTML = testNaN (secondNumber);
 
-  if (stop == true) {
-    document.getElementById('answer').innerHTML = "Restart the example, a width or height needs to be a number."
-  } else {
-    console.log("The display geometry is", geometry (firstNumber, secondNumber) );
-    document.getElementById('answer').innerHTML = "This display is " + geometry (firstNumber, secondNumber);
-  }
+   //Illustrates one example of character escapes
+   console.log("In memory, \n the first number is " + firstNumber + " and \n the second number is " + secondNumber);
+   document.getElementById('memory').innerHTML = "The two numbers from memory are: " + firstNumber + " & " + secondNumber;
 
-}
+   if (stop == true) {
+     document.getElementById('answer').innerHTML = "Restart the example, a width or height needs to be a number."
+   } else {
+     console.log("Ordered smallest to largest: ", smallestToLargest (firstNumber, secondNumber) );
+     document.getElementById('answer').innerHTML = "Ordered smallest to largest: " + smallestToLargest (firstNumber, secondNumber);
+   }
+ }
